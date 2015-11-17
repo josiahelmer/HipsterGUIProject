@@ -12,7 +12,10 @@ public class Hipster
 	}
 	private void setupArray()
 	{
-		
+		hipsterPhrases[0] = "That is so mainstream!";
+		hipsterPhrases[1] = "I don't mean to sound like a hipster, but,";
+		hipsterPhrases[2] = "Insert sarcastic prhase here";
+		hipsterPhrases[3] = "I was into Fallout before it was cool";
 	}
 	public String getName()
 	{

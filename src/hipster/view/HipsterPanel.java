@@ -12,12 +12,19 @@ public class HipsterPanel extends JPanel
 	private HipsterController baseController;
 	private SpringLayout baseLayout;
 	private JComboBox<String> phraseComboBox;
-	private
+	private int maxClicks;
+	private int startClick;
 	
 	public HipsterPanel(HipsterController baseController)
 	{
 	this.baseController = baseController;
 	baseLayout = new SpringLayout();
+	phraseComboBox = new JComboBox<String>();
+	
+	setupComboBox();
+	setupPanel();
+	setupLayout();
+	setupListeners();
 	
 	}
 	private void setupComboBox()
@@ -29,7 +36,7 @@ public class HipsterPanel extends JPanel
 		
 
 		
-		setupListeners();
+	
 	}
 	private void setupPanel()
 	{
@@ -57,6 +64,6 @@ public class HipsterPanel extends JPanel
 				baseController.getBaseFrame().setTitle(updatedTitle);
 			}
 		
-		}
+		});
 	}
 }
