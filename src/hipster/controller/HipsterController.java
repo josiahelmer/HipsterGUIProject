@@ -26,8 +26,8 @@ public void start()
 		return firstHipster;
 	}
 	
-	public HipsterFrame()
+	public HipsterFrame getBaseFrame()
 	{
-		return HipsterFrame;
+		return baseFrame;
 	}
 }

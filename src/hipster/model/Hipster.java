@@ -10,6 +10,7 @@ public class Hipster
 		this.hipsterPhrases = new String[4];
 		
 	}
+
 	private void setupArray()
 	{
 		hipsterPhrases[0] = "That is so mainstream!";
