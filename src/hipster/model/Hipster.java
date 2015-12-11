@@ -36,11 +36,19 @@ public class Hipster
 		firstBook.setPrice(13.00);
 		
 		secondBook = new Book();
-		secondBook.setAuthor("");
-		secondBook.setTitle("");
-		secondBook.setSubject("");
-		secondBook.setPageCount(2);
-		secondBook.setPrice(1);
+		secondBook.setAuthor("Brandon Mull");
+		secondBook.setTitle("Fablehaven");
+		secondBook.setSubject("Fantasy");
+		secondBook.setPageCount(300);
+		secondBook.setPrice(10.00);
+		
+		thirdBook = new Book();
+		thirdBook.setAuthor("Brandon Mull");
+		thirdBook.setTitle("Beyonders");
+		thirdBook.setSubject("Fantasy");
+		thirdBook.setPageCount(400);
+		thirdBook.setPrice(15.00);
+		
 		
 	}
 	public String getName()

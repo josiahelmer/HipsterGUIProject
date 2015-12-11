@@ -20,12 +20,14 @@ public class HipsterPanel extends JPanel
 	private JLabel bookTitleLabel;
 	private JLabel bookPriceLabel;
 	private JButton changeBookButton;
+	private JButton changeTitleButton;
 	private int maxClicks;
 	private int startClick;
 	
 	public HipsterPanel(HipsterController baseController)
 	{
 		this.baseController = baseController;
+		changeTitleButton = new JButton("Change title");
 		baseLayout = new SpringLayout();
 		phraseComboBox = new JComboBox<String>();
 		bookPageCountLabel = new JLabel("The page count");
@@ -64,6 +66,7 @@ public class HipsterPanel extends JPanel
 		this.add(bookPriceLabel);
 		this.add(bookSubjectLabel);
 		this.add(changeBookButton);
+		this.add(changeTitleButton);
 	}
 	
 	private void setupLayout()
